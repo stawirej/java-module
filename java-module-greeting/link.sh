@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JIGSAW_JDK_PATH=/c/ProgramFiles/Java/jigsaw-jdk-9
+JIGSAW_JDK_PATH="/c/Program\ Files/Java/jdk-9.0.4"
 
 rm -R greetingsapp
 
