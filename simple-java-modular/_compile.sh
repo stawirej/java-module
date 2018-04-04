@@ -1,6 +1,6 @@
 #!/bin/bash
 
-JIGSAW_JDK_PATH=/c/ProgramFiles/Java/jigsaw-jdk-9
+JIGSAW_JDK_PATH=/c/ProgramFiles/Java/jdk-9.0.4
 
 #Create modules output folder
 mkdir -p target/modules
