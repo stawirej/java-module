@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.stawirej.maven.modular.java</groupId>
+    <artifactId>java-modular-maven</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>JavaModularMaven Parent</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>
+        <org.ow2.asm.version>6.1.1</org.ow2.asm.version>
+        <java.release>10</java.release>
+    </properties>
+
+    <modules>
+        <module>earth</module>
+        <module>mars</module>
+        <module>elon</module>
+        <module>api</module>
+        <module>pluto</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>planet.earth</groupId>
+                <artifactId>earth</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>planet.mars</groupId>
+                <artifactId>mars</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>planet.pluto</groupId>
+                <artifactId>pluto</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven.compiler.plugin.version}</version>
+                <configuration>
+                    <release>${java.release}</release>
+                </configuration>
+                <dependencies>
+                    <!--
+                     HACK to enable JAVA 10.
+                     maven-compiler-plugin depends on the old version of ASM which does not support Java 10 yet.
+                     However, it is possible to explicitly specify the right version of ASM
+                     -->
+                    <dependency>
+                        <groupId>org.ow2.asm</groupId>
+                        <artifactId>asm</artifactId>
+                        <version>${org.ow2.asm.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
