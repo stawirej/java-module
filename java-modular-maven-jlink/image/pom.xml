@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.stawirej.maven.modular.java</groupId>
+    <groupId>com.stawirej.image</groupId>
     <artifactId>image</artifactId>
     <packaging>jlink</packaging>
 
@@ -15,16 +15,6 @@
     </parent>
 
     <dependencies>
-        <dependency>
-            <groupId>planet.earth</groupId>
-            <artifactId>earth</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>planet.mars</groupId>
-            <artifactId>mars</artifactId>
-            <version>${project.version}</version>
-        </dependency>
         <dependency>
             <groupId>user.elon</groupId>
             <artifactId>elon</artifactId>
