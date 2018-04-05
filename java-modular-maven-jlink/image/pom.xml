@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.stawirej.maven.modular.java</groupId>
-    <artifactId>mod-jlink</artifactId>
+    <artifactId>image</artifactId>
     <packaging>jlink</packaging>
 
     <parent>

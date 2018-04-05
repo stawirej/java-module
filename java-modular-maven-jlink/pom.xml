@@ -26,7 +26,7 @@
         <module>mars</module>
         <module>elon</module>
         <module>api</module>
-        <module>mod-jlink</module>
+        <module>image</module>
     </modules>
 
     <dependencyManagement>
