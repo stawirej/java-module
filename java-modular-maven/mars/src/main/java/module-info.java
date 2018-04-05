@@ -1,4 +1,4 @@
 module planet.mars {
-    requires transitive planet.api;
+    requires planet.api;
     exports planet.mars;
 }
