@@ -15,7 +15,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>
         <org.ow2.asm.version>6.1.1</org.ow2.asm.version>
-        <java.release>9</java.release>
+        <maven.jlink.plugin.version>3.0.0-alpha-1</maven.jlink.plugin.version>
+        <java.release>10</java.release>
     </properties>
 
     <modules>
@@ -65,11 +66,24 @@
             </plugin>
             <plugin>
                 <artifactId>maven-jlink-plugin</artifactId>
-                <version>3.0.0-alpha-1</version>
+                <version>${maven.jlink.plugin.version}</version>
                 <extensions>true</extensions>
                 <configuration>
+                    <stripDebug>true</stripDebug>
                     <!-- configuration elements goes here -->
                 </configuration>
+                <dependencies>
+                    <!--
+                     HACK to enable JAVA 10.
+                     maven-compiler-plugin depends on the old version of ASM which does not support Java 10 yet.
+                     However, it is possible to explicitly specify the right version of ASM
+                     -->
+                    <dependency>
+                        <groupId>org.ow2.asm</groupId>
+                        <artifactId>asm</artifactId>
+                        <version>${org.ow2.asm.version}</version>
+                    </dependency>
+                </dependencies>
             </plugin>
         </plugins>
     </build>
