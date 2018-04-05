@@ -76,6 +76,11 @@
                     -->
                     <stripDebug>${jlink.strip.debug}</stripDebug>
                     <compress>${jlink.copmpression.level}</compress>
+
+                    <!---
+                    Set final image name.
+                    -->
+                    <finalName>image-example</finalName>
                 </configuration>
                 <dependencies>
                     <!--
