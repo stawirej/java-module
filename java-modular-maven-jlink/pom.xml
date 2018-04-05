@@ -16,7 +16,7 @@
         <maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>
         <org.ow2.asm.version>6.1.1</org.ow2.asm.version>
         <maven.jlink.plugin.version>3.0.0-alpha-2-SNAPSHOT</maven.jlink.plugin.version>
-        <jlink.copmpression.level>2</jlink.copmpression.level>
+        <jlink.copmpression.level>2</jlink.copmpression.level> <!-- Available compressions levels: 0,1,2 -->
         <jlink.strip.debug>true</jlink.strip.debug>
         <java.release>10</java.release>
     </properties>
