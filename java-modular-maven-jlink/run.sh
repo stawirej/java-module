@@ -2,4 +2,4 @@ JAVA_HOME="c:\\Program Files\\Java\\jdk-10\\" mvn clean install
 cd elon
 JAVA_HOME="c:\\Program Files\\Java\\jdk-10\\" mvn exec:exec
 echo "Executing runtime image"
-../image/target/maven-jlink/bin/java user.elon.Elon
+../runtime-image/target/maven-jlink/bin/java user.elon.Elon

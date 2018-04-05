@@ -26,7 +26,7 @@
         <module>mars</module>
         <module>elon</module>
         <module>api</module>
-        <module>image</module>
+        <module>runtime-image</module>
     </modules>
 
     <dependencyManagement>
