@@ -15,7 +15,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.plugin.version>3.7.0</maven.compiler.plugin.version>
         <org.ow2.asm.version>6.1.1</org.ow2.asm.version>
-        <maven.jlink.plugin.version>3.0.0-alpha-1</maven.jlink.plugin.version>
+        <maven.jlink.plugin.version>3.0.0-alpha-2-SNAPSHOT</maven.jlink.plugin.version>
+        <jlink.copmpression.level>2</jlink.copmpression.level>
+        <jlink.strip.debug>true</jlink.strip.debug>
         <java.release>10</java.release>
     </properties>
 
@@ -69,8 +71,11 @@
                 <version>${maven.jlink.plugin.version}</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <stripDebug>true</stripDebug>
-                    <!-- configuration elements goes here -->
+                    <!--
+                     Decrease size of the runtime image.
+                    -->
+                    <stripDebug>${jlink.strip.debug}</stripDebug>
+                    <compress>${jlink.copmpression.level}</compress>
                 </configuration>
                 <dependencies>
                     <!--
