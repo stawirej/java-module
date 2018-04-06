@@ -52,6 +52,11 @@
                     <arguments>
                         <argument>--module-path</argument>
                         <modulepath/>
+                        
+                        <!-- Explicitly add optional module. Not enough to be on module path.-->
+                        <argument>--add-modules</argument>
+                        <argument>planet.pluto</argument>
+
                         <argument>--module</argument>
                         <argument>user.elon/user.elon.Elon</argument>
                     </arguments>
