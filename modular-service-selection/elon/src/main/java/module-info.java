@@ -1,5 +1,5 @@
-module user.elon {
-    requires planet.api;
+module module.elon {
+    requires module.api;
 
     uses planet.api.Planet;
 }

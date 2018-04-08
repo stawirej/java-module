@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>planet.earth</groupId>
+    <groupId>module.earth</groupId>
     <artifactId>earth</artifactId>
     <name>Earth</name>
 
@@ -20,7 +20,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>planet.api</groupId>
+            <groupId>module.api</groupId>
             <artifactId>api</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
