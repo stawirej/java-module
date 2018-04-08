@@ -21,11 +21,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>planet.earth</groupId>
+            <groupId>module.earth</groupId>
             <artifactId>earth</artifactId>
         </dependency>
         <dependency>
-            <groupId>planet.mars</groupId>
+            <groupId>module.mars</groupId>
             <artifactId>mars</artifactId>
         </dependency>
     </dependencies>

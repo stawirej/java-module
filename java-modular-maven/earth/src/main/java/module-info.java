@@ -1,5 +1,5 @@
-module planet.earth {
-    requires planet.api;
+module module.earth {
+    requires module.api;
     exports planet.earth;
 
 }

@@ -1,5 +1,5 @@
 module user.elon {
-    requires planet.api;
-    requires planet.earth;
-    requires planet.mars;
+    requires module.api;
+    requires module.earth;
+    requires module.mars;
 }

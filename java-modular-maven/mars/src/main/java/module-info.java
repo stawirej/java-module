@@ -1,4 +1,4 @@
-module planet.mars {
-    requires planet.api;
+module module.mars {
+    requires module.api;
     exports planet.mars;
 }
