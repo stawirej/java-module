@@ -16,7 +16,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>user.elon</groupId>
+            <groupId>module.elon</groupId>
             <artifactId>elon</artifactId>
             <version>${project.version}</version>
         </dependency>

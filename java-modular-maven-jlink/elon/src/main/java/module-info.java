@@ -1,6 +1,6 @@
-module user.elon {
+module module.elon {
     exports user.elon;
 
-    requires planet.earth;
-    requires planet.mars;
+    requires module.earth;
+    requires module.mars;
 }

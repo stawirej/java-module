@@ -32,12 +32,12 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>planet.earth</groupId>
+                <groupId>module.earth</groupId>
                 <artifactId>earth</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>planet.mars</groupId>
+                <groupId>module.mars</groupId>
                 <artifactId>mars</artifactId>
                 <version>${project.version}</version>
             </dependency>
