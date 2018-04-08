@@ -1,5 +1,5 @@
-module planet.earth {
-    requires transitive planet.api;
+module module.earth {
+    requires transitive module.api;
     exports planet.earth;
 
 }
