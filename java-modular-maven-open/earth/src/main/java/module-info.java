@@ -4,6 +4,6 @@ module module.earth {
     exports planet.earth;
     opens planet.earth;
     opens planet.core;
-//    opens planet.core to module.elon; // opens package to specific module
-//    opens planet.core to module.mars;
+//    opens planet.earth to module.elon;  // opens package to specific module
+//    opens planet.core to module.elon;
 }
