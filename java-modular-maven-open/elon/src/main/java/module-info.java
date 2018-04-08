@@ -1,4 +1,4 @@
-module user.elon {
-    requires planet.earth;
-    requires planet.mars;
+module module.elon {
+    requires module.earth;
+    requires module.mars;
 }
