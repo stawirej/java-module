@@ -1,5 +1,5 @@
-module user.elon {
-    requires planet.earth;
+module module.elon {
+    requires module.earth;
     requires planet.mars;
-    requires static planet.pluto;
+    requires static module.pluto;
 }

@@ -29,17 +29,17 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>planet.earth</groupId>
+                <groupId>module.earth</groupId>
                 <artifactId>earth</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>planet.mars</groupId>
+                <groupId>module.mars</groupId>
                 <artifactId>mars</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>planet.pluto</groupId>
+                <groupId>module.pluto</groupId>
                 <artifactId>pluto</artifactId>
                 <version>${project.version}</version>
             </dependency>

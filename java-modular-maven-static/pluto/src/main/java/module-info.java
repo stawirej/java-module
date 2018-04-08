@@ -1,4 +1,4 @@
-module planet.pluto {
-    requires transitive planet.api;
+module module.pluto {
+    requires transitive module.api;
     exports planet.pluto;
 }

@@ -21,15 +21,15 @@
 
     <dependencies>
         <dependency>
-            <groupId>planet.earth</groupId>
+            <groupId>module.earth</groupId>
             <artifactId>earth</artifactId>
         </dependency>
         <dependency>
-            <groupId>planet.mars</groupId>
+            <groupId>module.mars</groupId>
             <artifactId>mars</artifactId>
         </dependency>
         <dependency>
-            <groupId>planet.pluto</groupId>
+            <groupId>module.pluto</groupId>
             <artifactId>pluto</artifactId>
         </dependency>
     </dependencies>
@@ -55,10 +55,10 @@
                         
                         <!-- Explicitly add optional module. Not enough to be on module path.-->
                         <argument>--add-modules</argument>
-                        <argument>planet.pluto</argument>
+                        <argument>module.pluto</argument>
 
                         <argument>--module</argument>
-                        <argument>user.elon/user.elon.Elon</argument>
+                        <argument>module.elon/user.elon.Elon</argument>
                     </arguments>
                 </configuration>
             </plugin>
