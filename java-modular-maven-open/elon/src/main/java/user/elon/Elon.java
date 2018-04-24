@@ -43,7 +43,6 @@ final class Elon {
             declaredConstructor.setAccessible(true);
             Object oceansInstance = declaredConstructor.newInstance();
 
-            ClassLoader.getSystemClassLoader().loadClass("planet.earth.Oceans");
             return (String) oceans.invoke(oceansInstance);
         } catch (Exception exception) {
             throw new RuntimeException(exception);
@@ -63,7 +62,6 @@ final class Elon {
                     .getDeclaredConstructor()
                     .newInstance();
 
-            ClassLoader.getSystemClassLoader().loadClass("planet.core.EarthCore");
             return (String) core.invoke(earthCoreInstance);
         } catch (Exception exception) {
             throw new RuntimeException(exception);
